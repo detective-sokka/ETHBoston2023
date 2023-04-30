@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Provider Page (Ganache)</title>
+<title>Provider Page</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -579,13 +579,13 @@ async function cancelscholar() {
 
 <body class="container pt-5">
 	<div class="container-fluid p-5 bg-primary text-white text-center">
-		<h1>Scholarship Provider Page</h1>
-		<p>This page is for the scholarship provider to add scholarship details to the student or to cancel the scholarship</p> 
+		<h1>Job Provider Page</h1>
+		<p>This page is for the Job provider to add Job details to the Applicants or to cancel the JOb </p> 
 	</div>
 
 <div class="container p-3 my-5 border">
 	<form>
-		<h2 class="text-center">Add Scholarship</h2>
+		<h2 class="text-center">Add Job</h2>
 
 		<!--smart contract failed alert message, error message captured from smart contract-->
 		<div id="addFail" class="alert alert-danger" style="display:none;">
@@ -600,12 +600,12 @@ async function cancelscholar() {
 
 		<!--fields required for add scholarship-->
 		<div class="mb-3 mt-3">
-		  <label for="stuid" class="form-label"><strong>Student ID:</strong></label>
-		  <input type="number" class="form-control" id="stuid" data-bs-toggle="tooltip" title="Please enter number only" placeholder="Enter Student ID" name="stuid" required>
+		  <label for="stuid" class="form-label"><strong>Applicant ID:</strong></label>
+		  <input type="number" class="form-control" id="stuid" data-bs-toggle="tooltip" title="Please enter number only" placeholder="Enter Applicant ID" name="stuid" required>
 		  <div class="invalid-feedback" id="E1" style="display:none;">Please fill out this field.</div>
 		</div>
 		<div class="mb-3">
-		  <label for="name" class="form-label"><strong>Scholarship Name:</strong></label>
+		  <label for="name" class="form-label"><strong>Job Name:</strong></label>
 		  <input type="text" class="form-control" id="name" placeholder="Enter Scholarship Name" name="name" required>
 		  <div class="invalid-feedback" id="E2" style="display:none;">Please fill out this field.</div>
 		</div>
@@ -615,12 +615,12 @@ async function cancelscholar() {
 			<div class="invalid-feedback" id="E3" style="display:none;">Please fill out this field.</div>
 		</div>
 		<div class="mb-3">
-			<label for="attendance" class="form-label"><strong>Attendance Required:</strong></label>
+			<label for="attendance" class="form-label"><strong>Profeciency  Required:</strong></label>
 			<input type="number" class="form-control" id="attendance" data-bs-toggle="tooltip" title="Please enter number from 0 to 100" placeholder="Enter Attendance Percentage Required (0-100)" name="attendance" required>
 			<div class="invalid-feedback" id="E4" style="display:none;">Please fill out this field with valid value (0-100).</div>
 		</div>
 		<div class="mb-3">
-			<label for="mark" class="form-label"><strong>Average Mark Required:</strong></label>
+			<label for="mark" class="form-label"><strong>Average Income Required</strong></label>
 			<input type="number" class="form-control" id="mark" data-bs-toggle="tooltip" title="Please enter number from 0 to 100" placeholder="Enter Average Mark Required (0-100)" name="mark" required>
 			<div class="invalid-feedback" id="E5" style="display:none;">Please fill out this field with valid value (0-100).</div>
 		</div>
@@ -633,7 +633,7 @@ async function cancelscholar() {
 
 <div class="container p-3 my-5 border">
 	<form>
-		<h2 class="text-center">Cancel Scholarship</h2>
+		<h2 class="text-center">Cancel Job</h2>
 
 		<!--smart contract failed alert message, error message captured from smart contract-->
 		<div id="cancelFail" class="alert alert-danger" style="display:none;">
@@ -642,14 +642,14 @@ async function cancelscholar() {
 	
 		<!--smart contract run success message-->
 		<div id="cancelSuccess" class="alert alert-success" style="display:none;">
-			<p><strong>Success!</strong> You have cancelled the scholarship for student below successfully. </p>
+			<p><strong>Success!</strong> You have cancelled the Job for Applicant below successfully. </p>
 			<div id="done"></div>
 		</div>
 
 		<!--fields required for cancel scholarship-->
 		<div class="mb-3 mt-3">
-		  <label for="id" class="form-label"><strong>Student ID:</strong></label>
-		  <input type="number" class="form-control" id="id" data-bs-toggle="tooltip" title="Please enter number only" placeholder="Enter Student ID" name="id" required>
+		  <label for="id" class="form-label"><strong>Applicant  ID:</strong></label>
+		  <input type="number" class="form-control" id="id" data-bs-toggle="tooltip" title="Please enter number only" placeholder="Enter Applicant  ID" name="id" required>
 		  <div class="invalid-feedback" id="E6" style="display:none;">Please fill out this field.</div>
 		</div>
 		<div class="container text-center">
